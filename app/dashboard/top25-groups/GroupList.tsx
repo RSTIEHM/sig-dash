@@ -1,13 +1,15 @@
 "use client";
 
+import type { GroupRow } from "@/app/lib/fetchers-groups";
+
 export default function GroupList({
   items,
   selectedRank,
   onSelect,
 }: {
-  items: { rank: number | null; group: string;  }[];
+  items: GroupRow[];                 // <-- accept full normalized rows
   selectedRank?: number;
-  onSelect?: (rank: number) => void;
+  onSelect: (rank: number) => void;
 }) {
   return (
     <aside className="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm max-h-[640px] overflow-auto">
