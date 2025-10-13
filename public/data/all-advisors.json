@@ -1,0 +1,1212 @@
+[
+  {
+    "name": "Michael Stewart",
+    "group": "Crystal Lake Tax and Fin Svc",
+    "status": "Active",
+    "aumPrev": 215192131.64722642,
+    "aumYTD": 252664529.95999995,
+    "gainDollar": 37472398.312773526,
+    "gainPct": 0.1741346118277392,
+    "rank": 1
+  },
+  {
+    "name": "Jeffrey Small",
+    "group": "Arbor Financial Services",
+    "status": "Active",
+    "aumPrev": 211749642.4726771,
+    "aumYTD": 240729640.76000038,
+    "gainDollar": 28979998.287323266,
+    "gainPct": 0.13685972712356606,
+    "rank": 2
+  },
+  {
+    "name": "David Stearns",
+    "group": "Stearns Retirement Group",
+    "status": "Active",
+    "aumPrev": 176611170.3211321,
+    "aumYTD": 227006073.61999983,
+    "gainDollar": 50394903.29886773,
+    "gainPct": 0.2853438047391605,
+    "rank": 3
+  },
+  {
+    "name": "Matthew Johnson",
+    "group": "Johnson Wealth & Income Mgmt",
+    "status": "Active",
+    "aumPrev": 151351967.5986493,
+    "aumYTD": 174338030.6999999,
+    "gainDollar": 22986063.101350605,
+    "gainPct": 0.1518715842684277,
+    "rank": 4
+  },
+  {
+    "name": "David McAdams",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 163623956.8123761,
+    "aumYTD": 164695038.90000007,
+    "gainDollar": 1071082.0876239538,
+    "gainPct": 0.006545997960751795,
+    "rank": 5
+  },
+  {
+    "name": "Sam McElroy",
+    "group": "Stride Financial",
+    "status": "Active",
+    "aumPrev": 125165760.00357695,
+    "aumYTD": 154765615.98999995,
+    "gainDollar": 29599855.986423,
+    "gainPct": 0.23648524952492683,
+    "rank": 6
+  },
+  {
+    "name": "Anthony Saccaro",
+    "group": "Providence Financial Inc.",
+    "status": "Active",
+    "aumPrev": 142547959.74580002,
+    "aumYTD": 151782680.01000026,
+    "gainDollar": 9234720.26420024,
+    "gainPct": 0.06478325105927957,
+    "rank": 7
+  },
+  {
+    "name": "Patrick Peason",
+    "group": "Peason Financial Group",
+    "status": "Active",
+    "aumPrev": 138712027.7994309,
+    "aumYTD": 138833869.5700001,
+    "gainDollar": 121841.77056920528,
+    "gainPct": 0.0008783792761315625,
+    "rank": 8
+  },
+  {
+    "name": "David Eissman",
+    "group": "Eissman Wealth Management",
+    "status": "Active",
+    "aumPrev": 117401467.04995802,
+    "aumYTD": 130735089.81999995,
+    "gainDollar": 13333622.770041928,
+    "gainPct": 0.11357288034882947,
+    "rank": 9
+  },
+  {
+    "name": "Micheal Eastham",
+    "group": "Fellowship Financial, LLC",
+    "status": "Active",
+    "aumPrev": 103797699.89657818,
+    "aumYTD": 129326154.08999987,
+    "gainDollar": 25528454.19342169,
+    "gainPct": 0.24594431494009694,
+    "rank": 10
+  },
+  {
+    "name": "David Wright",
+    "group": "Wright Financial Group",
+    "status": "Active",
+    "aumPrev": 97210500.2793771,
+    "aumYTD": 110012361.69,
+    "gainDollar": 12801861.410622895,
+    "gainPct": 0.13169216672922285,
+    "rank": 11
+  },
+  {
+    "name": "Nathan Cox",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 96768375.56599808,
+    "aumYTD": 108856335.90000007,
+    "gainDollar": 12087960.334001988,
+    "gainPct": 0.12491643332131522,
+    "rank": 12
+  },
+  {
+    "name": "Jason Carrier",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 63397152.613536,
+    "aumYTD": 84884390.42999996,
+    "gainDollar": 21487237.816463962,
+    "gainPct": 0.3389306448421817,
+    "rank": 13
+  },
+  {
+    "name": "David Scranton",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 80114128.13350491,
+    "aumYTD": 84238320.52000001,
+    "gainDollar": 4124192.3864950985,
+    "gainPct": 0.0514789648540193,
+    "rank": 14
+  },
+  {
+    "name": "Michael Burleigh",
+    "group": "Peak Capital Management",
+    "status": "Active",
+    "aumPrev": 72934637.63636006,
+    "aumYTD": 84094111.70000009,
+    "gainDollar": 11159474.063640028,
+    "gainPct": 0.15300650589750378,
+    "rank": 15
+  },
+  {
+    "name": "Rachel Biggerstaff",
+    "group": "Wood Financial Group",
+    "status": "Active",
+    "aumPrev": 86275639.52034006,
+    "aumYTD": 69750725.4,
+    "gainDollar": -16524914.12034005,
+    "gainPct": -0.1915362692436976,
+    "rank": 16
+  },
+  {
+    "name": "James Locke Jr.",
+    "group": "Poole Locke Advisors",
+    "status": "Active",
+    "aumPrev": 53404412.682541,
+    "aumYTD": 63853347.25000005,
+    "gainDollar": 10448934.567459054,
+    "gainPct": 0.19565676397514295,
+    "rank": 17
+  },
+  {
+    "name": "Damian Rothermel",
+    "group": "Rothermel Financial",
+    "status": "Active",
+    "aumPrev": 52754320.62075001,
+    "aumYTD": 62714443.37000001,
+    "gainDollar": 9960122.749250002,
+    "gainPct": 0.1888020285741744,
+    "rank": 18
+  },
+  {
+    "name": "Tim Sparks",
+    "group": "Sparks Financial Group",
+    "status": "Active",
+    "aumPrev": 52468750.77628597,
+    "aumYTD": 59181552.660000056,
+    "gainDollar": 6712801.883714087,
+    "gainPct": 0.1279390453250135,
+    "rank": 19
+  },
+  {
+    "name": "Lex Hackley",
+    "group": "Lifemark/Front Range Financial",
+    "status": "Active",
+    "aumPrev": 40347745.68446799,
+    "aumYTD": 56967836.81999999,
+    "gainDollar": 16620091.135532,
+    "gainPct": 0.4119211830446815,
+    "rank": 20
+  },
+  {
+    "name": "Fabiano de Franco",
+    "group": "Retirement Solution LLC",
+    "status": "Active",
+    "aumPrev": 45416727.812204964,
+    "aumYTD": 55680539.38000001,
+    "gainDollar": 10263811.567795046,
+    "gainPct": 0.22599187705101076,
+    "rank": 21
+  },
+  {
+    "name": "Wes Wood",
+    "group": "Wood Financial Group",
+    "status": "Active",
+    "aumPrev": 87016382.19721402,
+    "aumYTD": 53707297.890000015,
+    "gainDollar": -33309084.307214007,
+    "gainPct": -0.3827909580488219,
+    "rank": 22
+  },
+  {
+    "name": "Micah Keel",
+    "group": "Retirement Income Source - Sarasota",
+    "status": "Active",
+    "aumPrev": 44468693.897565,
+    "aumYTD": 49697693.43000001,
+    "gainDollar": 5228999.532435007,
+    "gainPct": 0.11758833179315246,
+    "rank": 23
+  },
+  {
+    "name": "Aggie Valenta",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 16963599.543783005,
+    "aumYTD": 48061618.14,
+    "gainDollar": 31098018.596216995,
+    "gainPct": 1.83322050935906,
+    "rank": 24
+  },
+  {
+    "name": "Rory Richard",
+    "group": "Platinum Financial LLC",
+    "status": "Active",
+    "aumPrev": 21717064.50989399,
+    "aumYTD": 43422358.940000035,
+    "gainDollar": 21705294.430106044,
+    "gainPct": 0.9994580262087178,
+    "rank": 25
+  },
+  {
+    "name": "Frank Bailey",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 29681793.851118002,
+    "aumYTD": 42568642.20999995,
+    "gainDollar": 12886848.358881947,
+    "gainPct": 0.4341667630845212,
+    "rank": 26
+  },
+  {
+    "name": "Mark Graber",
+    "group": "Senior Advisors Inc.",
+    "status": "Active",
+    "aumPrev": 40541809.529568,
+    "aumYTD": 41000662.079999976,
+    "gainDollar": 458852.55043197423,
+    "gainPct": 0.011318008637412282,
+    "rank": 27
+  },
+  {
+    "name": "Lorraine Grossman",
+    "group": "Providence Financial Inc.",
+    "status": "Active",
+    "aumPrev": 27172168.047300026,
+    "aumYTD": 37606914.16,
+    "gainDollar": 10434746.11269997,
+    "gainPct": 0.38402331733469547,
+    "rank": 28
+  },
+  {
+    "name": "Dwight Rich",
+    "group": "Rich Wealth Management",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 35235862.11000001,
+    "gainDollar": 35235862.11000001,
+    "gainPct": 0,
+    "rank": 29
+  },
+  {
+    "name": "Kristin Carleton",
+    "group": "All Needs Planning",
+    "status": "Active",
+    "aumPrev": 21828186.250598997,
+    "aumYTD": 30158354.53000001,
+    "gainDollar": 8330168.279401012,
+    "gainPct": 0.381624390765514,
+    "rank": 30
+  },
+  {
+    "name": "Steve Archer",
+    "group": "Strategic Senior Benefits Group",
+    "status": "Active",
+    "aumPrev": 26227723.372488998,
+    "aumYTD": 29373291.04000002,
+    "gainDollar": 3145567.6675110236,
+    "gainPct": 0.11993292833073338,
+    "rank": 31
+  },
+  {
+    "name": "Bradley Williams",
+    "group": "Brad Williams Financial Svc",
+    "status": "Active",
+    "aumPrev": 22815594.27415999,
+    "aumYTD": 27372626.570000004,
+    "gainDollar": 4557032.295840014,
+    "gainPct": 0.19973322811937982,
+    "rank": 32
+  },
+  {
+    "name": "Benjamin Barning",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 19655466.28039,
+    "aumYTD": 27329762.21,
+    "gainDollar": 7674295.929609999,
+    "gainPct": 0.39044079749288585,
+    "rank": 33
+  },
+  {
+    "name": "Mary Mcdirmid",
+    "group": "All Needs Planning",
+    "status": "Active",
+    "aumPrev": 23746077.31544,
+    "aumYTD": 26568871.520000007,
+    "gainDollar": 2822794.204560008,
+    "gainPct": 0.11887412674785622,
+    "rank": 34
+  },
+  {
+    "name": "Don Avgerinos",
+    "group": "Spectrum Financial",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 25398340.750000004,
+    "gainDollar": 25398340.750000004,
+    "gainPct": 0,
+    "rank": 35
+  },
+  {
+    "name": "John McCartin",
+    "group": "McCartin Financial",
+    "status": "Active",
+    "aumPrev": 26491656.71598199,
+    "aumYTD": 25219572.13,
+    "gainDollar": -1272084.5859819911,
+    "gainPct": -0.048018310052106446,
+    "rank": 36
+  },
+  {
+    "name": "Joann Regan",
+    "group": "Financial Security Group",
+    "status": "Active",
+    "aumPrev": 14876564.991378,
+    "aumYTD": 23185244.23999999,
+    "gainDollar": 8308679.248621991,
+    "gainPct": 0.5585079118356587,
+    "rank": 37
+  },
+  {
+    "name": "Lindsey Cotter",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 19969942.46675099,
+    "aumYTD": 22399728.049999997,
+    "gainDollar": 2429785.5832490064,
+    "gainPct": 0.12167213737818647,
+    "rank": 38
+  },
+  {
+    "name": "Melanie Leahy",
+    "group": "Pinehurst Wealth ",
+    "status": "Active",
+    "aumPrev": 16890563.654665004,
+    "aumYTD": 22360255.689999998,
+    "gainDollar": 5469692.035334993,
+    "gainPct": 0.3238312318739179,
+    "rank": 39
+  },
+  {
+    "name": "Jeff Russitano",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 10055747.101869997,
+    "aumYTD": 21874691,
+    "gainDollar": 11818943.898130003,
+    "gainPct": 1.1753421976903256,
+    "rank": 40
+  },
+  {
+    "name": "Stacy Colonna",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 13715845.720299998,
+    "aumYTD": 18918348.919999998,
+    "gainDollar": 5202503.1997,
+    "gainPct": 0.37930604541578417,
+    "rank": 41
+  },
+  {
+    "name": "Spencer Ader",
+    "group": "Wood Financial Group",
+    "status": "Active",
+    "aumPrev": 36122131.611498006,
+    "aumYTD": 18632467.34000001,
+    "gainDollar": -17489664.271497995,
+    "gainPct": -0.48418140046671204,
+    "rank": 42
+  },
+  {
+    "name": "Fred Atlas",
+    "group": "Retirement Income Source - Sarasota",
+    "status": "Active",
+    "aumPrev": 18814954.23935799,
+    "aumYTD": 16918250.140000008,
+    "gainDollar": -1896704.0993579812,
+    "gainPct": -0.10080832912101205,
+    "rank": 43
+  },
+  {
+    "name": "Richard Burt",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 11856611.315700002,
+    "aumYTD": 16843195.890000004,
+    "gainDollar": 4986584.574300002,
+    "gainPct": 0.420574179377626,
+    "rank": 44
+  },
+  {
+    "name": "Eric Lutton",
+    "group": "Eric Lutton, CFA",
+    "status": "Active",
+    "aumPrev": 11540385.356519999,
+    "aumYTD": 16740282.85999999,
+    "gainDollar": 5199897.503479991,
+    "gainPct": 0.4505826575836302,
+    "rank": 45
+  },
+  {
+    "name": "Kenneth Carnevale",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 8302995.919500001,
+    "aumYTD": 15790536.990000002,
+    "gainDollar": 7487541.070500001,
+    "gainPct": 0.9017878779050267,
+    "rank": 46
+  },
+  {
+    "name": "Bill Richardson",
+    "group": "Retirement Income Source - MN",
+    "status": "Active",
+    "aumPrev": 9238791.71989,
+    "aumYTD": 14700528.199999997,
+    "gainDollar": 5461736.480109997,
+    "gainPct": 0.5911743273042447,
+    "rank": 47
+  },
+  {
+    "name": "Gary Osing",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 13547149.517935008,
+    "aumYTD": 14447898.949999996,
+    "gainDollar": 900749.4320649877,
+    "gainPct": 0.06648996018479679,
+    "rank": 48
+  },
+  {
+    "name": "Gerald Barnes",
+    "group": "Financial Security Group",
+    "status": "Active",
+    "aumPrev": 13514527.593736995,
+    "aumYTD": 13708197.310000004,
+    "gainDollar": 193669.71626300924,
+    "gainPct": 0.014330483616220602,
+    "rank": 49
+  },
+  {
+    "name": "Abbas Danesh",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 13211654.851204,
+    "aumYTD": 13345635.740000002,
+    "gainDollar": 133980.88879600167,
+    "gainPct": 0.010141113305256515,
+    "rank": 50
+  },
+  {
+    "name": "Scott Enzor",
+    "group": "McKenzie Financial Group",
+    "status": "Active",
+    "aumPrev": 10689255.5384,
+    "aumYTD": 12839637.540000001,
+    "gainDollar": 2150382.001600001,
+    "gainPct": 0.20117228874124912,
+    "rank": 51
+  },
+  {
+    "name": "Rick Prosser",
+    "group": "North American Financial",
+    "status": "Active",
+    "aumPrev": 11076669.614749994,
+    "aumYTD": 12547620.819999997,
+    "gainDollar": 1470951.2052500024,
+    "gainPct": 0.13279724469629786,
+    "rank": 52
+  },
+  {
+    "name": "Brian Moon",
+    "group": "Toro Bravo Investment Advisors, LLC",
+    "status": "Active",
+    "aumPrev": 14089259.368768997,
+    "aumYTD": 11441512.299999999,
+    "gainDollar": -2647747.0687689986,
+    "gainPct": -0.18792663258355055,
+    "rank": 53
+  },
+  {
+    "name": "Jackson Weeks",
+    "group": "Wood Financial Group",
+    "status": "Active",
+    "aumPrev": 9496291.844659999,
+    "aumYTD": 11125582.889999993,
+    "gainDollar": 1629291.0453399941,
+    "gainPct": 0.1715712903512106,
+    "rank": 54
+  },
+  {
+    "name": "Connor Stewart",
+    "group": "Crystal Lake Tax and Fin Svc",
+    "status": "Active",
+    "aumPrev": 4328914.82524,
+    "aumYTD": 10994008.05,
+    "gainDollar": 6665093.224760001,
+    "gainPct": 1.539668368132071,
+    "rank": 55
+  },
+  {
+    "name": "Jeff Bliss",
+    "group": "Bliss Wealth Management",
+    "status": "Active",
+    "aumPrev": 10825688.418976,
+    "aumYTD": 10949370.669999998,
+    "gainDollar": 123682.25102399848,
+    "gainPct": 0.011424885534965136,
+    "rank": 56
+  },
+  {
+    "name": "Jeanne Tatoian",
+    "group": "SFG of South Windsor",
+    "status": "Active",
+    "aumPrev": 10912583.315577,
+    "aumYTD": 9993330.21,
+    "gainDollar": -919253.1055769995,
+    "gainPct": -0.08423790032052499,
+    "rank": 57
+  },
+  {
+    "name": "Albert Flores",
+    "group": "Fortress Financial Group",
+    "status": "Active",
+    "aumPrev": 6975864.621974,
+    "aumYTD": 9616873.63,
+    "gainDollar": 2641009.008026001,
+    "gainPct": 0.3785923539437409,
+    "rank": 58
+  },
+  {
+    "name": "Eric Lardner",
+    "group": "Abundant Wealth Management",
+    "status": "Active",
+    "aumPrev": 8319980.029596003,
+    "aumYTD": 9524561.459999999,
+    "gainDollar": 1204581.4304039963,
+    "gainPct": 0.14478176944163743,
+    "rank": 59
+  },
+  {
+    "name": "Bruce Rellstab",
+    "group": "Community Investment and Retiremet Svc.",
+    "status": "Active",
+    "aumPrev": 8277512.3244,
+    "aumYTD": 9489967.529999997,
+    "gainDollar": 1212455.2055999972,
+    "gainPct": 0.1464757958772212,
+    "rank": 60
+  },
+  {
+    "name": "Shane Pearcy",
+    "group": "Firm Foundation TN",
+    "status": "Active",
+    "aumPrev": 5159973.9738,
+    "aumYTD": 8387279.640000001,
+    "gainDollar": 3227305.666200001,
+    "gainPct": 0.625449989202812,
+    "rank": 61
+  },
+  {
+    "name": "Andrew Mitchell",
+    "group": "Crystal Lake Tax and Fin Svc",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 8334888.82,
+    "gainDollar": 8334888.82,
+    "gainPct": 0,
+    "rank": 62
+  },
+  {
+    "name": "Tyson Asay",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 3727659.52009,
+    "aumYTD": 7420791.120000003,
+    "gainDollar": 3693131.599910003,
+    "gainPct": 0.9907373728759533,
+    "rank": 63
+  },
+  {
+    "name": "Dee Carter",
+    "group": "Carter Financial Group",
+    "status": "Active",
+    "aumPrev": 7067346.49582,
+    "aumYTD": 7241762.880000004,
+    "gainDollar": 174416.38418000378,
+    "gainPct": 0.024679189605768273,
+    "rank": 64
+  },
+  {
+    "name": "Ryan Alexander",
+    "group": "Crystal Lake Tax and Fin Svc",
+    "status": "Active",
+    "aumPrev": 703619.7914,
+    "aumYTD": 7156620.7700000005,
+    "gainDollar": 6453000.978600001,
+    "gainPct": 9.171147624714186,
+    "rank": 65
+  },
+  {
+    "name": "Ed Barnard",
+    "group": "Family Legacy Group",
+    "status": "Active",
+    "aumPrev": 5790180.3548300015,
+    "aumYTD": 6514342.409999997,
+    "gainDollar": 724162.0551699959,
+    "gainPct": 0.12506727092981149,
+    "rank": 66
+  },
+  {
+    "name": "Jared Gough",
+    "group": "Financial Security Group",
+    "status": "Active",
+    "aumPrev": 2971456.0085239997,
+    "aumYTD": 5901265.829999999,
+    "gainDollar": 2929809.8214759994,
+    "gainPct": 0.9859845856951834,
+    "rank": 67
+  },
+  {
+    "name": "Rick Bates",
+    "group": "Retirement Income Source - Ft. Lauderdale",
+    "status": "Active",
+    "aumPrev": 1641118.6233009996,
+    "aumYTD": 5262205.0600000005,
+    "gainDollar": 3621086.436699001,
+    "gainPct": 2.2064745261469456,
+    "rank": 68
+  },
+  {
+    "name": "Jacob Betteridge",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 4211586.57721,
+    "aumYTD": 5113715.609999999,
+    "gainDollar": 902129.0327899996,
+    "gainPct": 0.2142017067087393,
+    "rank": 69
+  },
+  {
+    "name": "Judson Pyatt",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 1823873.9444229999,
+    "aumYTD": 4224121.590000001,
+    "gainDollar": 2400247.645577001,
+    "gainPct": 1.3160161933978076,
+    "rank": 70
+  },
+  {
+    "name": "Nina Strickland",
+    "group": "SFG Capital Management",
+    "status": "Active",
+    "aumPrev": 6362313.919,
+    "aumYTD": 3981658.3,
+    "gainDollar": -2380655.619,
+    "gainPct": -0.3741807853728445,
+    "rank": 71
+  },
+  {
+    "name": "Edward Prince",
+    "group": "Moloney Securities Asset Management",
+    "status": "Active",
+    "aumPrev": 3367027.6803500005,
+    "aumYTD": 3926879.369999999,
+    "gainDollar": 559851.6896499987,
+    "gainPct": 0.1662747511454383,
+    "rank": 72
+  },
+  {
+    "name": "Roland Stadelmann",
+    "group": "Lattitude Advisors",
+    "status": "Active",
+    "aumPrev": 5054070.120431999,
+    "aumYTD": 3750309.91,
+    "gainDollar": -1303760.2104319986,
+    "gainPct": -0.25796243015333536,
+    "rank": 73
+  },
+  {
+    "name": "Andrew Agemy",
+    "group": "Agemy Financial Strategies, Inc.",
+    "status": "Active",
+    "aumPrev": 2469763.9860900003,
+    "aumYTD": 3575325.1300000004,
+    "gainDollar": 1105561.14391,
+    "gainPct": 0.44763837764930164,
+    "rank": 74
+  },
+  {
+    "name": "Keith George",
+    "group": "Lifemark/Front Range Financial",
+    "status": "Active",
+    "aumPrev": 2494481.5362199997,
+    "aumYTD": 3319269.2600000002,
+    "gainDollar": 824787.7237800006,
+    "gainPct": 0.3306449503850963,
+    "rank": 75
+  },
+  {
+    "name": "Andrew Holdiness",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 3225150.0852550003,
+    "aumYTD": 3286756.53,
+    "gainDollar": 61606.44474499952,
+    "gainPct": 0.01910188459962121,
+    "rank": 76
+  },
+  {
+    "name": "Billie Aponte",
+    "group": "Aponte Financial Services",
+    "status": "Active",
+    "aumPrev": 3452219.6905809995,
+    "aumYTD": 2890912.0999999996,
+    "gainDollar": -561307.5905809999,
+    "gainPct": -0.16259324170836106,
+    "rank": 77
+  },
+  {
+    "name": "Michel Bethea",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 666148.67115,
+    "aumYTD": 2696706.8400000003,
+    "gainDollar": 2030558.1688500005,
+    "gainPct": 3.0482056885958566,
+    "rank": 78
+  },
+  {
+    "name": "Jeremy Rabalais",
+    "group": "TPC Financial Group",
+    "status": "Active",
+    "aumPrev": 12794365.00268,
+    "aumYTD": 2504352.36,
+    "gainDollar": -10290012.64268,
+    "gainPct": -0.8042613010121706,
+    "rank": 79
+  },
+  {
+    "name": "James Lineweaver",
+    "group": "Lineweaver Wealth Advisors LLC",
+    "status": "Active",
+    "aumPrev": 4422855.06602,
+    "aumYTD": 2415488.27,
+    "gainDollar": -2007366.7960199998,
+    "gainPct": -0.45386221480378997,
+    "rank": 80
+  },
+  {
+    "name": "Victor Green",
+    "group": "Goodman Green Wealth Mgmt",
+    "status": "Active",
+    "aumPrev": 1373612.9360000002,
+    "aumYTD": 2223510.04,
+    "gainDollar": 849897.1039999998,
+    "gainPct": 0.6187311445063441,
+    "rank": 81
+  },
+  {
+    "name": "Gary Komarek",
+    "group": "North Shore Asset Mgmt",
+    "status": "Active",
+    "aumPrev": 2223902.256164,
+    "aumYTD": 2108092.4,
+    "gainDollar": -115809.856164,
+    "gainPct": -0.052075065728724945,
+    "rank": 82
+  },
+  {
+    "name": "Bruner Stephenson",
+    "group": "Retirement Income Solutions",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 2081273.4400000002,
+    "gainDollar": 2081273.4400000002,
+    "gainPct": 0,
+    "rank": 83
+  },
+  {
+    "name": "George Coules",
+    "group": "George Coules RICP",
+    "status": "Active",
+    "aumPrev": 2452197.1983999996,
+    "aumYTD": 1987003.34,
+    "gainDollar": -465193.85839999956,
+    "gainPct": -0.18970491390477384,
+    "rank": 84
+  },
+  {
+    "name": "Tim Beauregard",
+    "group": "Focus Financial Planning",
+    "status": "Active",
+    "aumPrev": 1617044.6487000003,
+    "aumYTD": 1732099.3399999999,
+    "gainDollar": 115054.6912999996,
+    "gainPct": 0.07115121489842359,
+    "rank": 85
+  },
+  {
+    "name": "Alexander Hunt",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 1649369.79,
+    "gainDollar": 1649369.79,
+    "gainPct": 0,
+    "rank": 86
+  },
+  {
+    "name": "Stuart Chamberlin",
+    "group": "Chamberlin Financial Inc",
+    "status": "Active",
+    "aumPrev": 2607521.1114999996,
+    "aumYTD": 1389649.3,
+    "gainDollar": -1217871.8114999996,
+    "gainPct": -0.46706115096395445,
+    "rank": 87
+  },
+  {
+    "name": "Mari Jo Harding",
+    "group": "Prudence Advisory Services, LLC",
+    "status": "Active",
+    "aumPrev": 1128363.755904,
+    "aumYTD": 1158743.77,
+    "gainDollar": 30380.014096,
+    "gainPct": 0.026923954209837894,
+    "rank": 88
+  },
+  {
+    "name": "William Tyler",
+    "group": "Aspen Creek Wealth",
+    "status": "Active",
+    "aumPrev": 796963.1336,
+    "aumYTD": 960463.4,
+    "gainDollar": 163500.26640000008,
+    "gainPct": 0.20515411504851583,
+    "rank": 89
+  },
+  {
+    "name": "Dixon Downey",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 67591.9639,
+    "aumYTD": 937826.8699999999,
+    "gainDollar": 870234.9060999999,
+    "gainPct": 12.874827951255902,
+    "rank": 90
+  },
+  {
+    "name": "Steven Szikszay",
+    "group": "Horizon Wealth Partners",
+    "status": "Active",
+    "aumPrev": 145892.80634,
+    "aumYTD": 662266.37,
+    "gainDollar": 516373.56366,
+    "gainPct": 3.53940387202233,
+    "rank": 91
+  },
+  {
+    "name": "George Kastanis",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 75680834.34797597,
+    "aumYTD": 655354.1400000001,
+    "gainDollar": -75025480.20797597,
+    "gainPct": -0.9913405534486218,
+    "rank": 92
+  },
+  {
+    "name": "Emory (Ty) Erb",
+    "group": "Brad Williams Financial Svc",
+    "status": "Active",
+    "aumPrev": 482313.3771,
+    "aumYTD": 509098.79,
+    "gainDollar": 26785.412899999996,
+    "gainPct": 0.055535289236745486,
+    "rank": 93
+  },
+  {
+    "name": "Zane Fowler",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 406466.06759999995,
+    "aumYTD": 474350.69999999995,
+    "gainDollar": 67884.6324,
+    "gainPct": 0.1670118069162042,
+    "rank": 94
+  },
+  {
+    "name": "Jeffrey Farrell",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 450817.34,
+    "gainDollar": 450817.34,
+    "gainPct": 0,
+    "rank": 95
+  },
+  {
+    "name": "Maurice Nelligan",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 1880251.91074,
+    "aumYTD": 377756.33999999997,
+    "gainDollar": -1502495.5707399999,
+    "gainPct": -0.7990926971847465,
+    "rank": 96
+  },
+  {
+    "name": "Lukas Pawlowski",
+    "group": "Scranton Financial Group",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 357005.77,
+    "gainDollar": 357005.77,
+    "gainPct": 0,
+    "rank": 97
+  },
+  {
+    "name": "Matthew Jory",
+    "group": "McAdams Group",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 292379.11,
+    "gainDollar": 292379.11,
+    "gainPct": 0,
+    "rank": 98
+  },
+  {
+    "name": "Laura Rolin",
+    "group": "WilLo Financial",
+    "status": "Active",
+    "aumPrev": 1874657.2215999998,
+    "aumYTD": 252569.25,
+    "gainDollar": -1622087.9715999998,
+    "gainPct": -0.8652717696388064,
+    "rank": 99
+  },
+  {
+    "name": "Stuart Choy",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 3009858.371407,
+    "aumYTD": 198512.63,
+    "gainDollar": -2811345.741407,
+    "gainPct": -0.9340458568131222,
+    "rank": 100
+  },
+  {
+    "name": "James Macaulay",
+    "group": "Eissman Wealth Management",
+    "status": "Active",
+    "aumPrev": 55131.7332,
+    "aumYTD": 60439.33,
+    "gainDollar": 5307.596799999999,
+    "gainPct": 0.09627117617989196,
+    "rank": 101
+  },
+  {
+    "name": "Mark Falter",
+    "group": "Mid American Wealth",
+    "status": "Active",
+    "aumPrev": 1857441.7894,
+    "aumYTD": 18427.57,
+    "gainDollar": -1839014.2193999998,
+    "gainPct": -0.9900790592172729,
+    "rank": 102
+  },
+  {
+    "name": "Brandon Shaw",
+    "group": "Aspen Creek Wealth",
+    "status": "Active",
+    "aumPrev": 11986.226,
+    "aumYTD": 12495.22,
+    "gainDollar": 508.9939999999988,
+    "gainPct": 0.04246490930506389,
+    "rank": 103
+  },
+  {
+    "name": "Gianna Campo",
+    "group": "Bulletproof Financial Inc",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 104
+  },
+  {
+    "name": "Rana Chander",
+    "group": "Sound Income Strategies",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 105
+  },
+  {
+    "name": "Nathan Collier",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 1747735.5014,
+    "aumYTD": 0,
+    "gainDollar": -1747735.5014,
+    "gainPct": -1,
+    "rank": 106
+  },
+  {
+    "name": "Steven Cox",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 4166831.812367,
+    "aumYTD": 0,
+    "gainDollar": -4166831.812367,
+    "gainPct": -1,
+    "rank": 107
+  },
+  {
+    "name": "Rusty Donohue",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 59159.7303,
+    "aumYTD": 0,
+    "gainDollar": -59159.7303,
+    "gainPct": -1,
+    "rank": 108
+  },
+  {
+    "name": "Randy Dorcey",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 2717625.2958300007,
+    "aumYTD": 0,
+    "gainDollar": -2717625.2958300007,
+    "gainPct": -1,
+    "rank": 109
+  },
+  {
+    "name": "Andrew Emmerich",
+    "group": "Retirement Income Source - St. Louis ",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 110
+  },
+  {
+    "name": "Keely Escalante",
+    "group": "Sound Income Strategies",
+    "status": "Active",
+    "aumPrev": 189.16,
+    "aumYTD": 0,
+    "gainDollar": -189.16,
+    "gainPct": -1,
+    "rank": 111
+  },
+  {
+    "name": "Matthew Malone",
+    "group": "Wood Financial Group",
+    "status": "Active",
+    "aumPrev": 2679767.5947800004,
+    "aumYTD": 0,
+    "gainDollar": -2679767.5947800004,
+    "gainPct": -1,
+    "rank": 112
+  },
+  {
+    "name": "McCartin - Mills",
+    "group": "McCartin Financial",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 113
+  },
+  {
+    "name": "Kyle Mills",
+    "group": "Harvest Financial",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 114
+  },
+  {
+    "name": "Drew Pelton",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 31656867.791802015,
+    "aumYTD": 0,
+    "gainDollar": -31656867.791802015,
+    "gainPct": -1,
+    "rank": 115
+  },
+  {
+    "name": "Steven Puckett",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 2140487.817392,
+    "aumYTD": 0,
+    "gainDollar": -2140487.817392,
+    "gainPct": -1,
+    "rank": 116
+  },
+  {
+    "name": "Jason Rogers",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 164290.68,
+    "aumYTD": 0,
+    "gainDollar": -164290.68,
+    "gainPct": -1,
+    "rank": 117
+  },
+  {
+    "name": "Sound Income Strategies",
+    "group": "Sound Income Strategies",
+    "status": "Active",
+    "aumPrev": 15.43,
+    "aumYTD": 0,
+    "gainDollar": -15.43,
+    "gainPct": -1,
+    "rank": 118
+  },
+  {
+    "name": "Todd Tarchis",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 65674.22,
+    "aumYTD": 0,
+    "gainDollar": -65674.22,
+    "gainPct": -1,
+    "rank": 119
+  },
+  {
+    "name": "David Tetley",
+    "group": "zTERMED",
+    "status": "TERMED",
+    "aumPrev": 3233345.230913,
+    "aumYTD": 0,
+    "gainDollar": -3233345.230913,
+    "gainPct": -1,
+    "rank": 120
+  },
+  {
+    "name": "Daniel Wren",
+    "group": "Retirement Income Source - St. Louis (2)",
+    "status": "Active",
+    "aumPrev": 0,
+    "aumYTD": 0,
+    "gainDollar": 0,
+    "gainPct": 0,
+    "rank": 121
+  }
+]

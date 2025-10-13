@@ -1,0 +1,227 @@
+[
+  {
+    "rank": 1,
+    "name": "Michael Stewart",
+    "group": "Crystal Lake Tax and Fin Svc",
+    "aumPrev": 215192131.64722642,
+    "aumYTD": 252664529.95999995,
+    "gainDollar": 37472398.312773526,
+    "gainPct": 0.1741346118277392
+  },
+  {
+    "rank": 2,
+    "name": "Jeffrey Small",
+    "group": "Arbor Financial Services",
+    "aumPrev": 211749642.4726771,
+    "aumYTD": 240729640.76000038,
+    "gainDollar": 28979998.287323266,
+    "gainPct": 0.13685972712356606
+  },
+  {
+    "rank": 3,
+    "name": "David Stearns",
+    "group": "Stearns Retirement Group",
+    "aumPrev": 176611170.3211321,
+    "aumYTD": 227006073.61999983,
+    "gainDollar": 50394903.29886773,
+    "gainPct": 0.2853438047391605
+  },
+  {
+    "rank": 4,
+    "name": "Matthew Johnson",
+    "group": "Johnson Wealth & Income Mgmt",
+    "aumPrev": 151351967.5986493,
+    "aumYTD": 174338030.6999999,
+    "gainDollar": 22986063.101350605,
+    "gainPct": 0.1518715842684277
+  },
+  {
+    "rank": 5,
+    "name": "David McAdams",
+    "group": "McAdams Group",
+    "aumPrev": 163623956.8123761,
+    "aumYTD": 164695038.90000007,
+    "gainDollar": 1071082.0876239538,
+    "gainPct": 0.006545997960751795
+  },
+  {
+    "rank": 6,
+    "name": "Sam McElroy",
+    "group": "Stride Financial",
+    "aumPrev": 125165760.00357695,
+    "aumYTD": 154765615.98999995,
+    "gainDollar": 29599855.986423,
+    "gainPct": 0.23648524952492683
+  },
+  {
+    "rank": 7,
+    "name": "Anthony Saccaro",
+    "group": "Providence Financial Inc.",
+    "aumPrev": 142547959.74580002,
+    "aumYTD": 151782680.01000026,
+    "gainDollar": 9234720.26420024,
+    "gainPct": 0.06478325105927957
+  },
+  {
+    "rank": 8,
+    "name": "Patrick Peason",
+    "group": "Peason Financial Group",
+    "aumPrev": 138712027.7994309,
+    "aumYTD": 138833869.5700001,
+    "gainDollar": 121841.77056920528,
+    "gainPct": 0.0008783792761315625
+  },
+  {
+    "rank": 9,
+    "name": "David Eissman",
+    "group": "Eissman Wealth Management",
+    "aumPrev": 117401467.04995802,
+    "aumYTD": 130735089.81999995,
+    "gainDollar": 13333622.770041928,
+    "gainPct": 0.11357288034882947
+  },
+  {
+    "rank": 10,
+    "name": "Micheal Eastham",
+    "group": "Fellowship Financial, LLC",
+    "aumPrev": 103797699.89657818,
+    "aumYTD": 129326154.08999987,
+    "gainDollar": 25528454.19342169,
+    "gainPct": 0.24594431494009694
+  },
+  {
+    "rank": 11,
+    "name": "David Wright",
+    "group": "Wright Financial Group",
+    "aumPrev": 97210500.2793771,
+    "aumYTD": 110012361.69,
+    "gainDollar": 12801861.410622895,
+    "gainPct": 0.13169216672922285
+  },
+  {
+    "rank": 12,
+    "name": "Nathan Cox",
+    "group": "Retirement Income Solutions",
+    "aumPrev": 96768375.56599808,
+    "aumYTD": 108856335.90000007,
+    "gainDollar": 12087960.334001988,
+    "gainPct": 0.12491643332131522
+  },
+  {
+    "rank": 13,
+    "name": "Jason Carrier",
+    "group": "Scranton Financial Group",
+    "aumPrev": 63397152.613536,
+    "aumYTD": 84884390.42999996,
+    "gainDollar": 21487237.816463962,
+    "gainPct": 0.3389306448421817
+  },
+  {
+    "rank": 14,
+    "name": "David Scranton",
+    "group": "Scranton Financial Group",
+    "aumPrev": 80114128.13350491,
+    "aumYTD": 84238320.52000001,
+    "gainDollar": 4124192.3864950985,
+    "gainPct": 0.0514789648540193
+  },
+  {
+    "rank": 15,
+    "name": "Michael Burleigh",
+    "group": "Peak Capital Management",
+    "aumPrev": 72934637.63636006,
+    "aumYTD": 84094111.70000009,
+    "gainDollar": 11159474.063640028,
+    "gainPct": 0.15300650589750378
+  },
+  {
+    "rank": 16,
+    "name": "Rachel Biggerstaff",
+    "group": "Wood Financial Group",
+    "aumPrev": 86275639.52034006,
+    "aumYTD": 69750725.4,
+    "gainDollar": -16524914.12034005,
+    "gainPct": -0.1915362692436976
+  },
+  {
+    "rank": 17,
+    "name": "James Locke Jr.",
+    "group": "Poole Locke Advisors",
+    "aumPrev": 53404412.682541,
+    "aumYTD": 63853347.25000005,
+    "gainDollar": 10448934.567459054,
+    "gainPct": 0.19565676397514295
+  },
+  {
+    "rank": 18,
+    "name": "Damian Rothermel",
+    "group": "Rothermel Financial",
+    "aumPrev": 52754320.62075001,
+    "aumYTD": 62714443.37000001,
+    "gainDollar": 9960122.749250002,
+    "gainPct": 0.1888020285741744
+  },
+  {
+    "rank": 19,
+    "name": "Tim Sparks",
+    "group": "Sparks Financial Group",
+    "aumPrev": 52468750.77628597,
+    "aumYTD": 59181552.660000056,
+    "gainDollar": 6712801.883714087,
+    "gainPct": 0.1279390453250135
+  },
+  {
+    "rank": 20,
+    "name": "Lex Hackley",
+    "group": "Lifemark/Front Range Financial",
+    "aumPrev": 40347745.68446799,
+    "aumYTD": 56967836.81999999,
+    "gainDollar": 16620091.135532,
+    "gainPct": 0.4119211830446815
+  },
+  {
+    "rank": 21,
+    "name": "Fabiano de Franco",
+    "group": "Retirement Solution LLC",
+    "aumPrev": 45416727.812204964,
+    "aumYTD": 55680539.38000001,
+    "gainDollar": 10263811.567795046,
+    "gainPct": 0.22599187705101076
+  },
+  {
+    "rank": 22,
+    "name": "Wes Wood",
+    "group": "Wood Financial Group",
+    "aumPrev": 87016382.19721402,
+    "aumYTD": 53707297.890000015,
+    "gainDollar": -33309084.307214007,
+    "gainPct": -0.3827909580488219
+  },
+  {
+    "rank": 23,
+    "name": "Micah Keel",
+    "group": "Retirement Income Source - Sarasota",
+    "aumPrev": 44468693.897565,
+    "aumYTD": 49697693.43000001,
+    "gainDollar": 5228999.532435007,
+    "gainPct": 0.11758833179315246
+  },
+  {
+    "rank": 24,
+    "name": "Aggie Valenta",
+    "group": "Scranton Financial Group",
+    "aumPrev": 16963599.543783005,
+    "aumYTD": 48061618.14,
+    "gainDollar": 31098018.596216995,
+    "gainPct": 1.83322050935906
+  },
+  {
+    "rank": 25,
+    "name": "Rory Richard",
+    "group": "Platinum Financial LLC",
+    "aumPrev": 21717064.50989399,
+    "aumYTD": 43422358.940000035,
+    "gainDollar": 21705294.430106044,
+    "gainPct": 0.9994580262087178
+  }
+]

@@ -1,15 +1,9 @@
 @import "tailwindcss";
 
+/* Light/Dark color tokens you already had */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +13,25 @@
   }
 }
 
+/* Tailwind v4: design tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* ✅ Set the default sans stack for `font-sans` */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* (nice-to-have) tracking helpers */
+  --tracking-tightest: -0.02em;
+  --tracking-tight: -0.01em;
+}
+
+/* Let Tailwind control the font; no hard-coded Arial */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Optional: if you want to force sans everywhere without utilities */
+  font-family: var(--font-sans);
 }

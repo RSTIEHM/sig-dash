@@ -1,0 +1,44 @@
+{
+  "labels": {
+    "top25Advisors": {
+      "prev": "AUM as of 12/31/24",
+      "ytd": "AUM as of   08/31/25"
+    },
+    "top25Groups": {
+      "prev": "Sum of AUM as of 12/31/24",
+      "ytd": "Sum of AUM as of   08/31/25"
+    },
+    "allAdvisors": {
+      "prev": "AUM as of 12/31/24",
+      "ytd": "AUM as of 08/31/25"
+    },
+    "allGroups": {
+      "prev": "Sum of AUM as of 12/31/24",
+      "ytd": "Sum of AUM as of  08/31/25"
+    }
+  },
+  "top25Advisors": {
+    "aumPrev": 2457411914.8212266,
+    "aumYTD": 2799999656.9400005,
+    "gainDollar": 342587742.11877394,
+    "gainPct": 0.13940997846252273
+  },
+  "top25Groups": {
+    "aumPrev": 2832763933.4992647,
+    "aumYTD": 3277552004.2200007,
+    "gainDollar": 444788070.720736,
+    "gainPct": 0.15701557954082568
+  },
+  "allAdvisors": {
+    "aumPrev": 3225931508.588411,
+    "aumYTD": 3624674438.720002,
+    "gainDollar": 398742930.1315913,
+    "gainPct": 0.12360551644386013
+  },
+  "allGroups": {
+    "aumPrev": 3225931508.5884123,
+    "aumYTD": 3624674438.720002,
+    "gainDollar": 398742930.1315899,
+    "gainPct": 0.12360551644385963
+  }
+}
