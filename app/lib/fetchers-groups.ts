@@ -1,15 +1,15 @@
 // app/lib/fetchers-groups.ts
 export type GroupRow = {
-  rank: number | null;             // <-- not optional anymore
+  rank: number | null;           // guaranteed present after normalize
   group: string;
   leadAdvisor?: string | null;
   aum2024: number;
   aumYTD: number;
   gainDollar: number;
-  gainPct: number;                 // decimal (0.157 = 15.7%)
+  gainPct: number;               // decimal
 };
 
-const n = (v: any): number => {
+const n = (v: unknown): number => {
   if (v == null) return 0;
   if (typeof v === "number") return Number.isFinite(v) ? v : 0;
   const s = String(v).replace(/[^0-9.-]/g, "");
@@ -24,7 +24,7 @@ function normalize(g: any, i: number): GroupRow {
   const gainPct    = aum2024 ? gainDollar / aum2024 : 0;
 
   return {
-    rank: g.rank ?? i + 1,                 // <-- always provide a number
+    rank: typeof g.rank === "number" ? g.rank : i + 1,   // always a number
     group: String(g.group ?? ""),
     leadAdvisor: g.leadAdvisor ?? null,
     aum2024,
@@ -35,17 +35,17 @@ function normalize(g: any, i: number): GroupRow {
 }
 
 export async function fetchTop25Groups(): Promise<GroupRow[]> {
-  const res = await fetch("/data/top25-groups.json", { cache: "no-store" });
+  const res  = await fetch("/data/top25-groups.json", { cache: "no-store" });
   const data = (await res.json()) ?? [];
-  const rows = data.map((g: any, i: number) => normalize(g, i));
-  rows.sort((a, b) => a.rank! - b.rank!);
+  const rows: GroupRow[] = data.map((g: any, i: number) => normalize(g, i));
+  rows.sort((a: GroupRow, b: GroupRow) => (a.rank ?? 0) - (b.rank ?? 0)); // ⬅️ typed + safe
   return rows;
 }
 
 export async function fetchAllGroups(): Promise<GroupRow[]> {
-  const res = await fetch("/data/all-groups.json", { cache: "no-store" });
+  const res  = await fetch("/data/all-groups.json", { cache: "no-store" });
   const data = (await res.json()) ?? [];
-  const rows = data.map((g: any, i: number) => normalize(g, i));
-  rows.sort((a, b) => a.rank! - b.rank!);
+  const rows: GroupRow[] = data.map((g: any, i: number) => normalize(g, i));
+  rows.sort((a: GroupRow, b: GroupRow) => (a.rank ?? 0) - (b.rank ?? 0)); // ⬅️ typed + safe
   return rows;
 }
