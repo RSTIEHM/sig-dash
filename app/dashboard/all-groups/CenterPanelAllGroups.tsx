@@ -36,8 +36,14 @@ export default function CenterPanelAllGroups({
   const pct = base ? diff / base : 0;
   const isUp = diff >= 0;
 
+  
+
   const shownRank = row.rank ?? idx + 1;
   const title = `${String(shownRank).padStart(2, "0")} ${row.group}`;
+  const start = 90;                           // start at top
+  const end   = isUp ? -270 : 450;            // clockwise if positive, ccw if negative
+  const seg   = Math.min(Math.abs(pct), 0.999);
+  const animKey = `${isUp ? "up" : "down"}-${selected?.rank ?? ""}`;
 
   return (
     <div className="space-y-5">
@@ -57,29 +63,36 @@ export default function CenterPanelAllGroups({
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
               <Pie
+                key={`base-${animKey}`}
                 data={[{ value: 1 }]}
                 innerRadius={78}
                 outerRadius={112}
-                startAngle={90}
-                endAngle={-270}
+                startAngle={start}
+                endAngle={end}
                 dataKey="value"
                 stroke="none"
+                isAnimationActive={false}
               >
                 <Cell fill="#E5E7EB" />
               </Pie>
               <Pie
-                data={[
-                  { value: Math.min(Math.abs(pct), 0.999) },
-                  { value: 1 - Math.min(Math.abs(pct), 0.999) },
-                ]}
-                innerRadius={72}
-                outerRadius={120}
-                startAngle={90}
-                endAngle={-270}
-                dataKey="value"
-                stroke="none"
-                cornerRadius={8}
-                paddingAngle={0.5}
+                key={`arc-${animKey}`}
+                  data={[
+                    { value: seg },
+                    { value: 1 - seg },
+                  ]}
+                  innerRadius={72}
+                  outerRadius={120}
+                  startAngle={start}
+                  endAngle={end}
+                  dataKey="value"
+                  stroke="none"
+                  cornerRadius={8}
+                  paddingAngle={0.5}
+                  isAnimationActive
+                  animationBegin={0}
+                  animationDuration={900}
+                  animationEasing="ease-out"
               >
                 <Cell fill={isUp ? "#698D6B" : "#E06666"} />
                 <Cell fill="transparent" />
@@ -90,7 +103,7 @@ export default function CenterPanelAllGroups({
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <div className="text-slate-600 font-semibold">Gain or Loss %</div>
             <div
-              className={`text-4xl font-extrabold ${
+              className={`text-3xl font-extrabold ${
                 isUp ? "text-emerald-700" : "text-rose-700"
               }`}
             >

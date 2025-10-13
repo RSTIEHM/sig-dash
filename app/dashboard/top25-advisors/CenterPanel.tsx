@@ -117,6 +117,12 @@ export function CenterPanelTop({ advisors, selectedRank }: Props) {
 // ---------- Donut: Gain/Loss %
 export function CenterPanelDonut({ advisors, selectedRank }: Props) {
   const { gainPct, isUp } = useSelected(advisors, selectedRank);
+  const start = 90;                          // top
+  const end   = isUp ? -270 : 450;           // up=clockwise, down=counter-clockwise
+  const seg   = Math.min(Math.abs(gainPct), 0.999);
+
+// Use key to retrigger animation when sign or selection changes
+const animKey = `${isUp ? "up" : "down"}-${selectedRank ?? ""}`;
 
   return (
     <div
@@ -138,13 +144,16 @@ export function CenterPanelDonut({ advisors, selectedRank }: Props) {
           <PieChart>
             {/* base thin ring */}
             <Pie
-              data={[{ name: 'rest', value: 1 }]}
-              innerRadius={78}
-              outerRadius={112}
-              startAngle={90}
-              endAngle={-270}
-              dataKey="value"
-              stroke="none"
+          key={`base-${animKey}`}
+          data={[{ name: "rest", value: 1 }]}
+          innerRadius={78}
+          outerRadius={112}
+          startAngle={start}
+          endAngle={end}
+          dataKey="value"
+          stroke="none"
+          isAnimationActive={false}
+
               cornerRadius={6}
             >
               <Cell fill="#E5E7EB" />
@@ -152,18 +161,22 @@ export function CenterPanelDonut({ advisors, selectedRank }: Props) {
 
             {/* colored arc */}
             <Pie
-              data={[
-                { name: 'gain', value: Math.min(Math.abs(gainPct), 0.999) },
-                { name: 'rest', value: 1 - Math.min(Math.abs(gainPct), 0.999) },
-              ]}
-              innerRadius={72}
-              outerRadius={120}
-              startAngle={90}
-              endAngle={-270}
-              dataKey="value"
-              stroke="none"
-              cornerRadius={8}
-              paddingAngle={0.5}
+          key={`arc-${animKey}`}               // remount on sign/rank change
+          data={[
+            { name: "gain", value: seg },
+            { name: "rest", value: 1 - seg },
+            ]}
+            innerRadius={72}
+            outerRadius={120}
+            startAngle={start}
+            endAngle={end}
+            dataKey="value"
+            stroke="none"
+            cornerRadius={8}
+            paddingAngle={0.5}
+            isAnimationActive
+            animationBegin={0}
+            animationDuration={900}
             >
               <Cell fill={isUp ? '#698D6B' : '#E06666'} />
               <Cell fill="transparent" />
@@ -179,7 +192,7 @@ export function CenterPanelDonut({ advisors, selectedRank }: Props) {
           <div
             className={`font-extrabold ${
               isUp ? "text-emerald-700" : "text-rose-700"
-            } text-3xl sm:text-4xl`}
+            } text-3xl sm:text-3xl`}
           >
             {fmtPct(gainPct)}
           </div>
