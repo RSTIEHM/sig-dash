@@ -1,13 +1,12 @@
 "use client";
-
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
-export type AdvisorRow = {
-  name: string;
-  group?: string;
-  status?: string;
-  aumPrev?: number | null;   // prior/2024 AUM
-  aumYTD?: number | null;    // current YTD AUM
+type GroupRow = {
+  group: string;
+  leadAdvisor?: string | null;
+  aumPrev?: number | null;   // prior / 2024 total
+  aum2024?: number | null;   // some JSONs use this
+  aumYTD?: number | null;    // current YTD total
   gainDollar?: number | null;
   gainPct?: number | null;   // decimal (e.g., 0.157)
   rank?: number | null;
@@ -22,63 +21,62 @@ function n(v: unknown): number {
   return Number(String(v).replace(/[,$]/g, "")) || 0;
 }
 
-// Full dollar, no decimals (e.g., $321,229,609)
-const fmtMoneyFull0 = (v: number) =>
+const moneyFull0 = (v: number) =>
   `$${Number(v || 0).toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
 
-// Short form with no decimals (e.g., $321M / $3B)
-const fmtMoneyShort = (v: number) => {
+const moneyShort0 = (v: number) => {
   const x = Math.abs(v || 0);
   if (x >= 1_000_000_000) return `$${Math.round(v / 1_000_000_000)}B`;
   if (x >= 1_000_000)     return `$${Math.round(v / 1_000_000)}M`;
   return `$${Number(v || 0).toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
 };
 
-const fmtPct = (p: number) => `${((p || 0) * 100).toFixed(1)}%`;
+const pctFmt = (p: number) => `${((p || 0) * 100).toFixed(1)}%`;
 
-export default function CenterPanelAllAdvisors({
-  advisors,
-  selected,
+export default function CenterPanelAllGroups({
+  groups,
+  selected, // string: group name
 }: {
-  advisors: AdvisorRow[];
-  selected: string | null;   // advisor name
+  groups: GroupRow[];
+  selected: string | null;
 }) {
-  // Resolve the selected advisor row from the string `selected`
-  const idx = Math.max(0, advisors.findIndex((r) => r.name === selected));
-  const row = advisors[idx] ?? advisors[0];
+  // Resolve the current group row from the selected group name
+  const idx  = Math.max(0, groups.findIndex((g) => g.group === selected));
+  const data = groups[idx] ?? groups[0];
 
   // Metrics
-  const base = n(row?.aumPrev);
-  const ytd  = n(row?.aumYTD);
+  const base = n(data?.aumPrev ?? data?.aum2024);
+  const ytd  = n(data?.aumYTD);
   const diff = ytd - base;
   const pct  = base ? diff / base : 0;
+  const isUp = diff >= 0;
 
-  const isUp  = diff >= 0;
-  const start = isUp ? 90 : 270;   // start at top for up, left for down
-  const end   = isUp ? -270 : 450; // clockwise if positive, ccw if negative
-  const seg   = Math.min(Math.abs(pct), 0.999);
-
-  // ✅ Use resolved row (or idx) for a stable animation key
-  const animKey = `${isUp ? "up" : "down"}-${row?.rank ?? idx + 1}`;
+  // Donut animation
+  const start   = isUp ? 90 : 270;
+  const end     = isUp ? -270 : 450;             // clockwise if positive, ccw if negative
+  const seg     = Math.min(Math.abs(pct), 0.999);
+  const animKey = `${isUp ? "up" : "down"}-${data?.rank ?? idx + 1}`; // ✅ use row, not selected string
 
   return (
-    <section className="space-y-4">
-      {/* Name bar */}
-      <div className="rounded-2xl bg-[#698D6B] text-white text-center font-bold py-3 shadow-sm text-2xl tracking-wide">
-        {String(row?.rank ?? idx + 1).padStart(2, "0")} {row?.name}
+    <div className="space-y-5">
+      {/* Title with rank */}
+      <div className="rounded-2xl bg-[var(--color-sig-green,#698D6B)] text-white text-center font-bold py-3 text-2xl shadow-sm">
+        {String(data?.rank ?? idx + 1).padStart(2, "0")} {data?.group}
       </div>
 
-      {/* Status line */}
-      <div className="text-center text-sm text-slate-600 -mt-2 mb-2">
-        <span className="font-semibold">Status:</span> {row?.status ?? "—"}
-      </div>
+      {/* Lead advisor line */}
+      {data?.leadAdvisor ? (
+        <div className="text-center text-slate-700 text-sm -mt-1 mb-1">
+          <span className="font-semibold">Lead Advisor:</span> {data.leadAdvisor}
+        </div>
+      ) : null}
 
-      {/* Donut */}
+      {/* Donut with directional animation */}
       <div className="relative flex h-[300px] w-full items-center justify-center">
         <div className="relative h-full w-[280px]">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
-              {/* Base ring */}
+              {/* base ring */}
               <Pie
                 key={`base-${animKey}`}
                 data={[{ value: 1 }]}
@@ -92,8 +90,7 @@ export default function CenterPanelAllAdvisors({
               >
                 <Cell fill="#E5E7EB" />
               </Pie>
-
-              {/* Directional overlay arc */}
+              {/* directional arc */}
               <Pie
                 key={`arc-${animKey}`}
                 data={[{ value: seg }, { value: 1 - seg }]}
@@ -116,46 +113,43 @@ export default function CenterPanelAllAdvisors({
             </PieChart>
           </ResponsiveContainer>
 
-          {/* Donut center labels */}
+          {/* Center labels */}
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <div className="text-slate-600 font-semibold">Gain or Loss %</div>
-            <div className={`text-[28px] sm:text-[32px] font-extrabold ${isUp ? "text-emerald-700" : "text-rose-700"}`}>
-              {fmtPct(pct)}
+            <div className="text-slate-600 font-semibold text-sm">Gain or Loss %</div>
+            <div className={`font-extrabold text-[28px] sm:text-[32px] ${isUp ? "text-[var(--color-sig-green,#698D6B)]" : "text-rose-700"}`}>
+              {pctFmt(pct)}
             </div>
           </div>
         </div>
       </div>
 
-      {/* KPI cards — full value (no decimals) except Total AUM (short) */}
+      {/* KPI cards — full value everywhere except Total AUM (short) */}
       <div className="grid grid-cols-2 gap-4 text-center">
         <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-sm">
           <div className="text-sm font-semibold text-slate-600">2024 AUM</div>
           <div className="font-extrabold text-2xl" style={{ color: KPI_GREEN }}>
-            {fmtMoneyFull0(base)}
+            {moneyFull0(base)}
           </div>
         </div>
-
         <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-sm">
           <div className="text-sm font-semibold text-slate-600">2025 YTD</div>
           <div className="font-extrabold text-2xl" style={{ color: KPI_GREEN }}>
-            {fmtMoneyFull0(ytd)}
+            {moneyFull0(ytd)}
           </div>
         </div>
-
         <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-sm">
           <div className="text-sm font-semibold text-slate-600">Gain or Loss $</div>
-          <div className={`font-extrabold text-2xl ${isUp ? "text-emerald-700" : "text-rose-700"}`}>
-            {fmtMoneyFull0(diff)}
+          <div className={`font-extrabold text-2xl ${isUp ? "text-[var(--color-sig-green,#698D6B)]" : "text-rose-700"}`}>
+            {moneyFull0(diff)}
           </div>
         </div>
-
         <div className="rounded-xl bg-white border border-slate-200 p-4 shadow-sm">
           <div className="text-sm font-semibold text-slate-600">Total AUM</div>
           <div className="font-extrabold text-2xl" style={{ color: KPI_GREEN }}>
-            {fmtMoneyShort(ytd)}
+            {moneyShort0(ytd)}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
