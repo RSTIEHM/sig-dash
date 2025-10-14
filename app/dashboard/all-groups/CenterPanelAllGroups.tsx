@@ -43,7 +43,9 @@ export default function CenterPanelAllGroups({
   const start = 90;                           // start at top
   const end   = isUp ? -270 : 450;            // clockwise if positive, ccw if negative
   const seg   = Math.min(Math.abs(pct), 0.999);
-  const animKey = `${isUp ? "up" : "down"}-${selected?.rank ?? ""}`;
+// ✅ use the actual row’s rank or fallback to index+1
+  const animKey = `${isUp ? "up" : "down"}-${row.rank ?? idx + 1}`;
+
 
   return (
     <div className="space-y-5">
