@@ -148,11 +148,20 @@ export async function fetchWeeklyBizData(): Promise<{
 
 
 // --- Weekly advisor drilldown data types ---
-export type WeeklyPoint = { w: number; value: number };
+type WeeklyPoint =
+  | number
+  | { w?: number; week?: number; v?: number; value?: number };
 export type WeeklyAdvisor = {
   id: string;
   name: string;
   weekly: { w: number; v: number }[];
+};
+
+// Coerce any weekly point to a number
+const pointToNumber = (p: WeeklyPoint): number => {
+  if (typeof p === "number") return p;
+  const n = Number(p?.value ?? p?.v ?? 0);
+  return Number.isFinite(n) ? n : 0;
 };
 
 export type WeeklySeries = { advisors: WeeklyAdvisor[] };
@@ -172,11 +181,16 @@ export async function fetchWeeklySeries(
 
 // helpers
 export const sumAdvisorYTD = (a?: WeeklyAdvisor) =>
-  (a?.weekly ?? []).reduce((s, p) => s + (p.value || 0), 0);
+  (a?.weekly ?? []).reduce((sum, p) => sum + pointToNumber(p), 0);
+
+// export const formatUSD = (n: number) =>
+//   n >= 1_000_000
+//     ? `$${(n / 1_000_000).toFixed(1)}M`
+//     : n >= 1_000
+//     ? `$${(n / 1_000).toFixed(1)}K`
+//     : `$${n.toLocaleString()}`;
 
 export const formatUSD = (n: number) =>
   n >= 1_000_000
     ? `$${(n / 1_000_000).toFixed(1)}M`
-    : n >= 1_000
-    ? `$${(n / 1_000).toFixed(1)}K`
-    : `$${n.toLocaleString()}`;
+    : `$${Math.round(n).toLocaleString("en-US")}`;
