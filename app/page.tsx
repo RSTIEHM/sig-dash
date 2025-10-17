@@ -2,10 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   const links = [
-    { title: "Top 25 Advisors", href: "/dashboard/top25-advisors" },
-    { title: "Top 25 Groups", href: "/dashboard/top25-groups" },
-    { title: "All Advisors", href: "/dashboard/all-advisors" },
-    { title: "All Groups", href: "/dashboard/all-groups" },
+    { title: "AUM Report", href: "/dashboard/top25-advisors" },
+    { title: "Weekly Biz", href: "/dashboard/weekly-biz" }
   ];
 
   return (
@@ -13,12 +11,12 @@ export default function Home() {
       <div className="max-w-md w-full p-6 text-center">
         <div className="flex items-center justify-center py-3">
           <Image
-            src="/sig-logo.png"
+            src="/SIG-Rebranded-Logo.png"
             alt="Sound Income Group"
-            width={0}
+            width={400}
             height={0}
             sizes="100vw"
-            className="w-40 h-auto"
+            className="w-400 h-auto"
           />
         </div>
         <div className="grid grid-cols-1 gap-4">
