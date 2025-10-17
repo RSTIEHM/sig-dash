@@ -17,9 +17,13 @@ import {
   formatCurrencyFull,
 } from "@/app/lib/chart-helpers";
 
-type Num = number | string | null | undefined;
-type ObjPoint = { w?: Num; week?: Num; value?: Num };
-type DataInput = Array<Num | ObjPoint>;
+/* ----------------------------- Types ----------------------------- */
+
+type Num = number | string;
+type Maybe<T> = T | null | undefined;
+
+type ObjPoint = { w?: Maybe<Num>; week?: Maybe<Num>; value?: Maybe<Num> };
+type DataInput = Array<Maybe<Num | ObjPoint>>;
 
 type Props = {
   title: string;
@@ -29,7 +33,7 @@ type Props = {
 
 /* ------------------------- helpers ------------------------- */
 
-function toNumberLoose(v: Num): number {
+function toNumberLoose(v: Maybe<Num>): number {
   if (typeof v === "number" && Number.isFinite(v)) return v;
   if (v == null) return 0;
   const cleaned = String(v).replace(/[^0-9.\-]/g, "");
@@ -37,12 +41,15 @@ function toNumberLoose(v: Num): number {
   return Number.isFinite(n) ? n : 0;
 }
 
-/** Normalize ANY input shape to { w, value } */
-function normalizeRows(input: DataInput) {
+/** Normalize ANY input shape to { w, value } with null safety */
+function normalizeRows(input: Maybe<DataInput>) {
   return (input ?? []).map((pt, i) => {
+    if (pt == null) return { w: i + 1, value: 0 };
+
     if (typeof pt === "number" || typeof pt === "string") {
       return { w: i + 1, value: toNumberLoose(pt) };
     }
+
     const w = toNumberLoose(pt.week ?? pt.w ?? i + 1);
     const value = toNumberLoose(pt.value ?? 0);
     return { w, value };
@@ -51,9 +58,7 @@ function normalizeRows(input: DataInput) {
 
 function hexToRgb(hex: string) {
   const s = hex.replace("#", "");
-  const b = s.length === 3
-    ? s.split("").map((c) => c + c).join("")
-    : s.padEnd(6, "0").slice(0, 6);
+  const b = s.length === 3 ? s.split("").map((c) => c + c).join("") : s.padEnd(6, "0").slice(0, 6);
   const n = parseInt(b, 16);
   return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
 }
@@ -111,8 +116,8 @@ export default function WeeklyTrendChart({
     const boxH = fontSize + padY * 3;
 
     // Sit above the dot/line slightly
-    const boxX = x - boxW / 2;
-    const boxY = y - boxH - 8;
+    const boxX = Number(x) - boxW / 2;
+    const boxY = Number(y) - boxH - 8;
 
     return (
       <g style={{ pointerEvents: "none" }}>
@@ -126,7 +131,7 @@ export default function WeeklyTrendChart({
           fill={rgbaFromHex(color, 0.85)}
         />
         <text
-          x={x}
+          x={Number(x)}
           y={boxY + boxH / 2 + 4}
           textAnchor="middle"
           fontSize={fontSize}
@@ -141,47 +146,44 @@ export default function WeeklyTrendChart({
 
   // Headroom so big spikes don't clip
   const yDomain: [number, any] = [0, (dataMax: number) => Math.ceil(dataMax * 1.08)];
-  
-// --- Custom tooltip (one clean row, no decimals) -----------------
-function WeeklyTooltip({
-  active,
-  label,
-  payload,
-}: {
-  active?: boolean;
-  label?: any;
-  payload?: Array<any>;
-}) {
-  if (!active || !payload || payload.length === 0) return null;
 
-  // if Recharts sends multiple entries, grab the first with our dataKey
-  const row = payload.find((p) => p?.dataKey === "value") ?? payload[0];
+  // --- Custom tooltip (one clean row, no decimals) -----------------
+  function WeeklyTooltip({
+    active,
+    label,
+    payload,
+  }: {
+    active?: boolean;
+    label?: any;
+    payload?: Array<any>;
+  }) {
+    if (!active || !payload || payload.length === 0) return null;
 
-  const n = Number.isFinite(row?.value)
-    ? Math.round(Number(row.value))
-    : Math.round(toNumberLoose(row?.value));
+    const row = payload.find((p) => p?.dataKey === "value") ?? payload[0];
 
-  const dollars = `$${n.toLocaleString("en-US")}`;
+    const n = Number.isFinite(row?.value)
+      ? Math.round(Number(row.value))
+      : Math.round(toNumberLoose(row?.value));
 
-  return (
-    <div
-      style={{
-        background: "#fff",
-        borderRadius: 10,
-        border: "1px solid #e2e8f0",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
-        padding: "10px 12px",
-      }}
-    >
-      <div style={{ color: "#111827", fontWeight: 800, marginBottom: 4 }}>
-        {`Week ${label}`}
+    const dollars = `$${n.toLocaleString("en-US")}`;
+
+    return (
+      <div
+        style={{
+          background: "#fff",
+          borderRadius: 10,
+          border: "1px solid #e2e8f0",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+          padding: "10px 12px",
+        }}
+      >
+        <div style={{ color: "#111827", fontWeight: 800, marginBottom: 4 }}>
+          {`Week ${label}`}
+        </div>
+        <div style={{ color: "#111827", fontWeight: 700 }}>{dollars}</div>
       </div>
-      <div style={{ color: "#111827", fontWeight: 700 }}>{dollars}</div>
-    </div>
-  );
-}
-
-
+    );
+  }
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -216,9 +218,7 @@ function WeeklyTooltip({
               domain={yDomain}
             />
 
-      <RTooltip
-  content={<WeeklyTooltip />}
-/>
+            <RTooltip content={<WeeklyTooltip />} />
 
             {/* visible stroke + area */}
             <Area
