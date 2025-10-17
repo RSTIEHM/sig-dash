@@ -1,0 +1,358 @@
+{
+  "annuities": {
+    "monthly": [
+      {
+        "m": "Jan",
+        "area": 58676791,
+        "line": 51285851
+      },
+      {
+        "m": "Feb",
+        "area": 59339163,
+        "line": 45875786
+      },
+      {
+        "m": "Mar",
+        "area": 63817815,
+        "line": 49857378
+      },
+      {
+        "m": "Apr",
+        "area": 67478223,
+        "line": 64740072
+      },
+      {
+        "m": "May",
+        "area": 53637093,
+        "line": 59487698
+      },
+      {
+        "m": "Jun",
+        "area": 51864075,
+        "line": 54507680
+      },
+      {
+        "m": "Jul",
+        "area": 62118587,
+        "line": 57102221
+      },
+      {
+        "m": "Aug",
+        "area": 56664982,
+        "line": 48151220
+      },
+      {
+        "m": "Sep",
+        "area": 65135296,
+        "line": 73736733
+      },
+      {
+        "m": "Oct",
+        "area": 65994790,
+        "line": 23198316
+      },
+      {
+        "m": "Nov",
+        "area": 57086810,
+        "line": 0
+      },
+      {
+        "m": "Dec",
+        "area": 58798368,
+        "line": 0
+      }
+    ],
+    "table": [
+      {
+        "month": "Jan",
+        "y2024": 58676791,
+        "y2025": 51285851
+      },
+      {
+        "month": "Feb",
+        "y2024": 59339163,
+        "y2025": 45875786
+      },
+      {
+        "month": "Mar",
+        "y2024": 63817815,
+        "y2025": 49857378
+      },
+      {
+        "month": "Apr",
+        "y2024": 67478223,
+        "y2025": 64740072
+      },
+      {
+        "month": "May",
+        "y2024": 53637093,
+        "y2025": 59487698
+      },
+      {
+        "month": "Jun",
+        "y2024": 51864075,
+        "y2025": 54507680
+      },
+      {
+        "month": "Jul",
+        "y2024": 62118587,
+        "y2025": 57102221
+      },
+      {
+        "month": "Aug",
+        "y2024": 56664982,
+        "y2025": 48151220
+      },
+      {
+        "month": "Sep",
+        "y2024": 65135296,
+        "y2025": 73736733
+      },
+      {
+        "month": "Oct",
+        "y2024": 65994790,
+        "y2025": 23198316
+      },
+      {
+        "month": "Nov",
+        "y2024": 57086810,
+        "y2025": 0
+      },
+      {
+        "month": "Dec",
+        "y2024": 58798368,
+        "y2025": 0
+      }
+    ],
+    "pending": [
+      {
+        "carrier": "Allianz Preferred",
+        "value": 7281468
+      },
+      {
+        "carrier": "Corebridge",
+        "value": 753959
+      },
+      {
+        "carrier": "American Equity",
+        "value": 2967881
+      },
+      {
+        "carrier": "American National",
+        "value": 2861918
+      },
+      {
+        "carrier": "Athene",
+        "value": 323361
+      },
+      {
+        "carrier": "EquiTrust",
+        "value": 3899611
+      },
+      {
+        "carrier": "F&G",
+        "value": 1010388
+      },
+      {
+        "carrier": "Gilico",
+        "value": 5821533
+      },
+      {
+        "carrier": "Global Atlantic",
+        "value": 152478
+      },
+      {
+        "carrier": "MassMutual",
+        "value": 165685
+      },
+      {
+        "carrier": "Lincoln",
+        "value": 3201761
+      },
+      {
+        "carrier": "N. American",
+        "value": 874016
+      },
+      {
+        "carrier": "Oceanview",
+        "value": 0
+      },
+      {
+        "carrier": "Silac",
+        "value": 4843717
+      }
+    ]
+  },
+  "life": {
+    "monthly": [
+      {
+        "m": "Jan",
+        "area": 10429,
+        "line": 37885
+      },
+      {
+        "m": "Feb",
+        "area": 103315,
+        "line": 92126
+      },
+      {
+        "m": "Mar",
+        "area": 85464,
+        "line": 316422
+      },
+      {
+        "m": "Apr",
+        "area": 9454,
+        "line": 46142
+      },
+      {
+        "m": "May",
+        "area": 46606,
+        "line": 39792
+      },
+      {
+        "m": "Jun",
+        "area": 4747,
+        "line": 228444
+      },
+      {
+        "m": "Jul",
+        "area": 188435,
+        "line": -32480
+      },
+      {
+        "m": "Aug",
+        "area": 399303,
+        "line": 33790
+      },
+      {
+        "m": "Sep",
+        "area": 18845,
+        "line": 53319
+      },
+      {
+        "m": "Oct",
+        "area": 52008,
+        "line": 3153
+      },
+      {
+        "m": "Nov",
+        "area": 187142,
+        "line": 0
+      },
+      {
+        "m": "Dec",
+        "area": 135528,
+        "line": 0
+      }
+    ],
+    "table": [
+      {
+        "month": "Jan",
+        "y2024": 10429,
+        "y2025": 37885
+      },
+      {
+        "month": "Feb",
+        "y2024": 103315,
+        "y2025": 92126
+      },
+      {
+        "month": "Mar",
+        "y2024": 85464,
+        "y2025": 316422
+      },
+      {
+        "month": "Apr",
+        "y2024": 9454,
+        "y2025": 46142
+      },
+      {
+        "month": "May",
+        "y2024": 46606,
+        "y2025": 39792
+      },
+      {
+        "month": "Jun",
+        "y2024": 4747,
+        "y2025": 228444
+      },
+      {
+        "month": "Jul",
+        "y2024": 188435,
+        "y2025": -32480
+      },
+      {
+        "month": "Aug",
+        "y2024": 399303,
+        "y2025": 33790
+      },
+      {
+        "month": "Sep",
+        "y2024": 18845,
+        "y2025": 53319
+      },
+      {
+        "month": "Oct",
+        "y2024": 52008,
+        "y2025": 3153
+      },
+      {
+        "month": "Nov",
+        "y2024": 187142,
+        "y2025": 0
+      },
+      {
+        "month": "Dec",
+        "y2024": 135528,
+        "y2025": 0
+      }
+    ],
+    "pending": [
+      {
+        "carrier": "Banner",
+        "value": 0
+      },
+      {
+        "carrier": "Corebridge",
+        "value": 12474
+      },
+      {
+        "carrier": "F&G",
+        "value": 0
+      },
+      {
+        "carrier": "LSW",
+        "value": 713
+      },
+      {
+        "carrier": "Lincoln",
+        "value": 100000
+      },
+      {
+        "carrier": "Mass Mutual",
+        "value": 100000
+      },
+      {
+        "carrier": "Mutual of Omaha",
+        "value": 0
+      },
+      {
+        "carrier": "Nationwide",
+        "value": 63000
+      },
+      {
+        "carrier": "North American",
+        "value": 9585
+      },
+      {
+        "carrier": "One America",
+        "value": 400000
+      },
+      {
+        "carrier": "Protective",
+        "value": 11664
+      }
+    ]
+  }
+}
