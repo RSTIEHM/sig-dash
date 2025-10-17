@@ -50,14 +50,14 @@ function NavItem({
 export default function Header() {
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto max-w-[1600px] px-6 py-2.5 flex items-center justify-between">
+      <div className="mx-auto max-w-[1600px] px-6 py-.5 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/sig-logo.png"
+            src="/SIG-Rebranded-Logo.png"
             alt="Sound Income Group"
-            width={130}
-            height={36}
+            width={250}
+            height={60}
             priority
           />
         </Link>
